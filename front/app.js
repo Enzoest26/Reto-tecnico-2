@@ -1,7 +1,7 @@
 function initialLoad() {
-    const url = `http://${window.location.hostname}:30081`;
+    //const url = `http://${window.location.hostname}:30081`;
 
-    fetch(url)
+    fetch('/api/products')
         .then(response => response.json())
         .then(data => {
             document.getElementById('product-list').innerText = JSON.stringify(data);

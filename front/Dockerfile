@@ -1,7 +1,9 @@
 FROM nginx:alpine
 
-RUN rm -rf /usr/share/nginx/html/*
-COPY . /usr/share/nginx/html
+
+COPY nginx.conf /etc/nginx/nginx.conf
+COPY index.html /usr/share/nginx/html/index.html
+COPY app.js /usr/share/nginx/html/app.js
 
 EXPOSE 80
 
