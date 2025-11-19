@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Deployment
+metadata:
+  name: back-deployment
+  labels:
+    app: apps-back
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: app-back
+  template:
+    metadata:
+      labels:
+        app: app-back
+    spec:
+      containers:
+        - name: app-back
+          image: enzoest26/app-back:latest
+          ports:
+            - containerPort: 8080

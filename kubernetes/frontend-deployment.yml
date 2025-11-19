@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Deployment
+metadata:
+  name: front-deployment
+  labels:
+    app: apps-front
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: apps-front
+  template:
+    metadata:
+      labels:
+        app: app-front
+    spec:
+      containers:
+        - name: app-front
+          image: enzoest26/app-front:latest
+          ports:
+            - containerPort: 80 
