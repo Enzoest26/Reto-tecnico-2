@@ -11,3 +11,5 @@ function initialLoad() {
             console.error('Error fetching data:', error);
         });
 }
+
+initialLoad();
