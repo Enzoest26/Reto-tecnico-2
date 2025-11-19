@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: back-service
   labels:
-    app: back-service
+    app: app-back
 spec:
   type: ClusterIP
   selector:
