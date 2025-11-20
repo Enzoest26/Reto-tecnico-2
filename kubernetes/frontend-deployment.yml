@@ -18,4 +18,7 @@ spec:
         - name: app-front
           image: enzoest26/app-front:latest
           ports:
-            - containerPort: 80 
+            - containerPort: 8080
+          env:
+            - name: BACKEND_URL
+              value: "http://back-service:8080"
