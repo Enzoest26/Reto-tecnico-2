@@ -1,18 +1,19 @@
-# Product App — Backend + Frontend + Kubernetes
+# Product App — Backend/Frontend/Docker/Kubernetes
 
-Este proyecto incluye una aplicación simple utilizando proxy inverso para un reto técnico de Niubiz - Pregunta 2:
+Este proyecto incluye una aplicación simple para un reto técnico de Niubiz - Pregunta 2:
 
-- Backend en Spring Boot WebFlux
-- Frontend estático (HTML/JavaScript/NGINX)
+- Backend en Spring Boot
+- Frontend estático en Spring Boot
 - Dockerfiles para contenerizar ambas aplicaciones
-- Manifiestos de Deployments y Services en Kubernetes
+- Manifiestos de Deployment y Service en Kubernetes
 
 ---
 
 ## Tecnologías utilizadas
 
-- Java 21/Spring Boot WebFlux
-- HTML/JavaScript/NIGNX
+- Java 21
+- Spring Boot
+- Webflux 
 - Docker
 - Kubernetes
 
