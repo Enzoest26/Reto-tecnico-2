@@ -15,3 +15,5 @@ Este proyecto incluye una aplicación simple utilizando proxy inverso para un re
 - HTML/JavaScript/NIGNX
 - Docker
 - Kubernetes
+
+**Autor: Enzo Jesús Esteban Quispe**
