@@ -1,6 +1,6 @@
 package com.nuibiz.app.service.impl;
 
-import com.nuibiz.app.dto.ProductDto;
+import com.nuibiz.app.dto.Producto;
 import com.nuibiz.app.service.IProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -14,9 +14,9 @@ public class ProductService implements IProductService {
     private final WebClient client;
 
     @Override
-    public Flux<ProductDto> getAll() {
-        return client.get().uri("/products")
+    public Flux<Producto> getAll() {
+        return client.get().uri("/api/products")
                 .retrieve()
-                .bodyToFlux(ProductDto.class);
+                .bodyToFlux(Producto.class);
     }
 }

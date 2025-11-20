@@ -1,6 +1,6 @@
 package com.nuibiz.app.controller;
 
-import com.nuibiz.app.dto.ProductDto;
+import com.nuibiz.app.dto.Producto;
 import com.nuibiz.app.service.IProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,7 +16,7 @@ public class ProductController {
     private final IProductService productService;
 
     @GetMapping
-    public Flux<ProductDto> getAll() {
+    public Flux<Producto> getAll() {
         return productService.getAll();
     }
 }
