@@ -11,7 +11,7 @@ import java.util.List;
 @Service
 public class ProductService implements IProductService {
 
-    public static final List<Product> data = Arrays.asList(
+    public static final List<Product> DATA = Arrays.asList(
             new Product(1L, "Title 01"),
             new Product(2L, "Title 02"),
             new Product(3L, "Title 03")
@@ -19,6 +19,6 @@ public class ProductService implements IProductService {
 
     @Override
     public Flux<Product> getAll() {
-        return Flux.fromIterable(data);
+        return Flux.fromIterable(DATA);
     }
 }
